@@ -1,6 +1,6 @@
 # Bottleneck_Detection
 
-# 🔍 End-to-End Bottleneck Detection in Supply Chain Systems
+# End-to-End Bottleneck Detection in Supply Chain Systems
 ### Process Mining · Machine Learning · Discrete-Event Simulation
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
@@ -12,7 +12,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project builds a **three-layer end-to-end pipeline** for early-stage bottleneck prediction in supply chain operations — before route assignment is even made. The system combines discrete-event simulation, process mining, and classical ML to enable proactive decision-making in logistics workflows.
 
@@ -20,7 +20,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -44,7 +44,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 
 ---
 
-## ⚙️ Layer 1 — AnyLogic Simulation
+##  Layer 1 — AnyLogic Simulation
 
 ![AnyLogic Model](Anylogic%20Simulation%20Model.png)
 
@@ -55,7 +55,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 
 ---
 
-## 🔬 Layer 2 — Process Mining
+##  Layer 2 — Process Mining
 
 **Tool:** `PM4Py`
 
@@ -71,7 +71,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 
 ---
 
-## 🧠 Layer 3 — ML Pipeline
+##  Layer 3 — ML Pipeline
 
 ### Feature Engineering (20+ features)
 - **Early-stage delays:** Processing time and wait time at upstream stages (pre-route)
@@ -86,7 +86,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 | Model | Accuracy | ROC-AUC | Recall (Bottleneck) |
 |-------|----------|---------|----------------------|
 | Logistic Regression | ~71% | ~0.58 | ~52% |
-| **Random Forest** ✅ | **77%** | **0.64** | **65%** |
+| **Random Forest** | **77%** | **0.64** | **65%** |
 | XGBoost | ~75% | ~0.62 | ~60% |
 
 ### Why Recall over Accuracy?
@@ -97,7 +97,7 @@ This operational logic drove the choice to **prioritize recall** as the primary 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 Bottleneck_Detection/
@@ -115,7 +115,7 @@ Bottleneck_Detection/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -138,16 +138,16 @@ jupyter notebook Notebooks/03_ML_Modeling.ipynb
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
-- ✅ **Random Forest** selected as the best model: 77% accuracy, 0.64 ROC-AUC, **65% recall**
-- ✅ **100% trace fitness** on Petri net model — simulation produces process-conformant logs
-- ✅ Early-stage prediction enabled: bottleneck flag raised **before route assignment**
-- ⚠️ ROC-AUC of 0.64 reflects the inherent difficulty of early-stage prediction with limited downstream information — an intentional and realistic constraint
+-  **Random Forest** selected as the best model: 77% accuracy, 0.64 ROC-AUC, **65% recall**
+-  **100% trace fitness** on Petri net model — simulation produces process-conformant logs
+-  Early-stage prediction enabled: bottleneck flag raised **before route assignment**
+-  ROC-AUC of 0.64 reflects the inherent difficulty of early-stage prediction with limited downstream information — an intentional and realistic constraint
 
 ---
 
-## 💡 Business Impact
+##  Business Impact
 
 | Capability | Operational Benefit |
 |---|---|
@@ -158,7 +158,7 @@ jupyter notebook Notebooks/03_ML_Modeling.ipynb
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -171,8 +171,3 @@ jupyter notebook Notebooks/03_ML_Modeling.ipynb
 
 ---
 
-## 👤 Author
-
-**Esakkidass** — Production Engineering + Data Science  
-VJTI Mumbai · B.Tech Final Year  
-[GitHub](https://github.com/Esakkidassyadav)
