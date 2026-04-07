@@ -14,7 +14,7 @@
 
 ##  Project Overview
 
-This project builds a **three-layer end-to-end pipeline** for early-stage bottleneck prediction in supply chain operations — before route assignment is even made. The system combines discrete-event simulation, process mining, and classical ML to enable proactive decision-making in logistics workflows.
+This project builds a **three layer end-to-end pipeline** for early-stage bottleneck prediction in supply chain operations before route assignment is even made. The system combines discrete-event simulation, process mining, and classical ML to enable proactive decision-making in logistics workflows.
 
 **Core question:** *Can we predict supply chain bottlenecks at early process stages, using only upstream event data, before the bottleneck actually occurs downstream?*
 
@@ -51,7 +51,7 @@ This project builds a **three-layer end-to-end pipeline** for early-stage bottle
 - Modeled a multi-stage e-commerce supply chain with order processing, warehouse handling, and route dispatch agents
 - Generated **~50,000 event log records** across **~5,000 order cases**
 - Each record captures: `case_id`, `activity`, `timestamp`, `resource`, `route`, and lifecycle markers
-- Fixed agent ID recycling via a global `orderCounter` and `HashMap<Integer, Integer>` to ensure unique case tracking across simulation resets
+
 
 ---
 
@@ -141,9 +141,9 @@ jupyter notebook Notebooks/03_ML_Modeling.ipynb
 ##  Key Results
 
 -  **Random Forest** selected as the best model: 77% accuracy, 0.64 ROC-AUC, **65% recall**
--  **100% trace fitness** on Petri net model — simulation produces process-conformant logs
+-  **100% trace fitness** on Petri net model  simulation produces process-conformant logs
 -  Early-stage prediction enabled: bottleneck flag raised **before route assignment**
--  ROC-AUC of 0.64 reflects the inherent difficulty of early-stage prediction with limited downstream information — an intentional and realistic constraint
+-  ROC-AUC of 0.64 reflects the inherent difficulty of early-stage prediction with limited downstream information an intentional and realistic constraint
 
 ---
 
@@ -163,7 +163,7 @@ jupyter notebook Notebooks/03_ML_Modeling.ipynb
 | Category | Tools |
 |---|---|
 | Simulation | AnyLogic (Discrete-Event) |
-| Process Mining | PM4Py, Inductive Miner, Token Replay |
+| Process Mining | PM4Py, Inductive Miner |
 | Data Processing | Python, Pandas, NumPy |
 | ML Models | Scikit-learn, XGBoost |
 | Visualization | Matplotlib, Seaborn |
